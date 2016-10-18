@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="politics">政治</string>
+    <string name="society">社会</string>
+    <string name="diplomacy">外交</string>
+    <string name="military">军事</string>
+    <string name="law">法律</string>
+    <string name="environment">环境</string>
+</resources>

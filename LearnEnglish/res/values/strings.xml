@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LearnEnglish</string>
+	<string name="cn_china">http://www.globaltimes.cn/china/</string>
+    <string name="translate_all">http://www.chadanci.com/e/extend/baidufy/</string>
+	<string name="translate_word">http://www.chadanci.com/s/</string>
+</resources>

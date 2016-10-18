@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	>
+	 
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#a0a0f0"
+        >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="用户中心"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="&lt;返回"
+            android:textColor="#ffffff"
+            />
+	</FrameLayout>
+    
+<!-- 	<FrameLayout  -->
+<!-- 	    android:layout_width="fill_parent" -->
+<!-- 	    android:layout_height="wrap_content" -->
+<!-- 	    > -->
+<!-- 	    <TextView  -->
+<!-- 	        android:layout_width="fill_parent" -->
+<!-- 	        android:layout_height="wrap_content" -->
+<!-- 	        android:text="头像" -->
+<!-- 	        android:textSize="20sp" -->
+<!-- 	        android:layout_gravity="center_vertical" -->
+<!-- 	        /> -->
+<!-- 	    <ImageView  -->
+<!-- 	        android:layout_width="50dp" -->
+<!-- 	        android:layout_height="50dp" -->
+<!-- 	        android:src="@drawable/ic_launcher" -->
+<!-- 	        android:layout_gravity="right" -->
+<!-- 	        /> -->
+<!-- 	</FrameLayout> -->
+    
+    <FrameLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    >
+	    <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="账号"
+	        android:textSize="20sp"
+	        android:layout_gravity="center_vertical"
+	        />
+	    <TextView
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:layout_gravity="right"
+	        android:id="@+id/tv_account"
+	        android:gravity="center"
+	        android:textSize="15sp"
+	        />
+	</FrameLayout>
+
+
+    <FrameLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    >
+	    <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="电子邮件"
+	        android:textSize="20sp"
+	        android:layout_gravity="center_vertical"
+	        />
+	    <TextView
+	        android:layout_width="150dp"
+	        android:layout_height="50dp"
+	        android:layout_gravity="right"
+	        android:id="@+id/tv_email"
+	        android:onClick="update_email"
+	        android:clickable="true"
+	        android:gravity="center"
+	        android:textSize="15sp"
+	        />
+	</FrameLayout>
+	
+    <FrameLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    >
+	    <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="电话号码"
+	        android:textSize="20sp"
+	        android:layout_gravity="center_vertical"
+	        />
+	    <TextView
+	        android:layout_width="100dp"
+	        android:layout_height="50dp"
+	        android:layout_gravity="right"
+	        android:id="@+id/tv_phone"
+	        android:onClick="update_phone"
+	        android:clickable="true"
+	        android:gravity="center"
+	        android:textSize="15sp"
+	        />
+	</FrameLayout>
+	
+	    <TextView
+	        android:id="@+id/tv_modify" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="修改密码"
+	        android:textSize="20sp"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginTop="20dp"
+	        android:clickable="true"
+	        android:onClick="modify_pwd"
+	        />
+   
+	    <TextView
+	        android:id="@+id/tv_look" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="查看单词本"
+	        android:textSize="20sp"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginTop="20dp"
+	        android:clickable="true"
+	        android:onClick="look_words"
+	        />
+	    
+    <Button 
+        android:id="@+id/bn_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:background="@drawable/bn_side"
+        android:onClick="DoLogout"
+		android:layout_marginTop="30dp"        
+        />
+
+</LinearLayout>
+

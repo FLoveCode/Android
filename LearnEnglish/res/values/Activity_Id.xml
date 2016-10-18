@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 系统默认的主界面 -->
+    <string name="MainActivity">android.intent.action.MAIN</string>
+    <string name="LoginActivity">android.intent.activity.LOGIN</string>
+    <string name="NewsActivity">android.intent.activity.NEWS</string>
+    <string name="PersonActivity">android.intent.activity.PERSON</string>
+    <string name="RegisterActivity">android.intent.activity.REGISTER</string>
+    <string name="WordsActivity">android.intent.activity.WORDS</string>
+    <string name="WordsBookActivity">android.intent.activity.WORDS_BOOK</string>
+    <string name="ArticleActivity">android.intent.activity.ARTICLE</string>
+    <string name="TranslateActivity">android.intent.activity.TRANSLATE</string>
+</resources>

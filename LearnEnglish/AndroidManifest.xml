@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.learnenglish"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+    
+    <!-- 网络状态 --> 
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        />
+    <!-- 连接到网络 -->
+	<uses-permission 
+	    android:name="android.permission.INTERNET"
+	    />
+	<!--获取wifi网络状态的信息 -->
+	<uses-permission 
+	    android:name="android.permission.ACCESS_WIFI_STATE" 
+	    /> 
+	<!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+	<uses-permission 
+	    android:name="android.permission.WAKE_LOCK" 
+	    /> 
+	<!--获取sd卡写的权限，用于文件上传和下载-->
+	<uses-permission 
+	    android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
+	    />
+	<!--允许读取手机状态 用于创建BmobInstallation--> 
+	<uses-permission 
+	    android:name="android.permission.READ_PHONE_STATE" 
+	    />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="fzb.learnenghlish.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="fzb.learnenghlish.activity.LoginActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.activity.LOGIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name="fzb.learnenghlish.activity.NewsActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.activity.NEWS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="fzb.learnenghlish.activity.PersonActivity"
+            >
+            <intent-filter >
+                <action android:name="android.intent.activity.PERSON"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+            android:name="fzb.learnenghlish.activity.RegisterActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.activity.REGISTER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+            android:name="fzb.learnenghlish.activity.WordsActivity"
+            >
+            <intent-filter >
+                <action android:name="android.intent.activity.WORDS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+            android:name="fzb.learnenghlish.activity.WordsBookActivity"
+            >
+            <intent-filter >
+                <action android:name="android.intent.activity.WORDS_BOOK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+            android:name="fzb.learnenghlish.activity.ArticleActivity"
+        	>
+            <intent-filter >
+                <action android:name="android.intent.activity.ARTICLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+       <activity
+           android:name="fzb.learnenghlish.activity.TranslateActivity"
+           >
+           <intent-filter>
+               <action android:name="android.intent.activity.TRANSLATE"/>
+               <category android:name="android.intent.category.DEFAULT"/>
+           </intent-filter>
+       </activity>
+        
+    </application>
+
+</manifest>
